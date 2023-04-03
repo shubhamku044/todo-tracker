@@ -8,8 +8,7 @@ const ListItems: React.FC = () => {
   const { todos } = useTodo();
   return (
     <Con as="div">
-      <AnimatePresence>
-
+      <AnimatePresence initial={false}>
         {
           todos.map((todo) => {
             return (

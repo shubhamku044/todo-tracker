@@ -20,9 +20,9 @@ const Item: React.FC<IProps> = ({ todo }) => {
   return (
     <ItemCon
       style={{ transformOrigin: 'left top' }}
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ type: 'spring', duration: 0.3 }}
+      initial={{ opacity: 0, y: 50, }}
+      animate={{ opacity: 1, y: 0, }}
+      transition={{ type: 'spring', bounce: 0, duration: 0.3 }}
       exit={{ opacity: 0, y: '50%' }}
     >
       <p>
